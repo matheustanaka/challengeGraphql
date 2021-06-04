@@ -8,7 +8,6 @@ function startServer({ typeDefs, resolvers }) {
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      // useFindAndModify: false,
     }
   );
   //Conecting database with mongoose

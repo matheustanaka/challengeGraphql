@@ -1,6 +1,6 @@
 import Post from "../../../models/Post";
 import User from "../../../models/User";
-
+//A function that resolves a value for a type Post
 export default {
   Post: {
     author: (post) => User.findById(post.author),
