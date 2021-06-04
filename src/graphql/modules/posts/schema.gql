@@ -1,0 +1,24 @@
+## Creating our Type Post with the requirements
+type Post {
+  _id: ID!
+  title: String!
+  content: String!
+  author: User
+}
+##Inputing our requirements of Type Post
+input PostInput {
+  title: String!
+  content: String!
+  author: ID!
+}
+## Getting our data
+type Query {
+  posts: [Post!]!
+  post(id: ID!): Post!
+}
+## Manipulating data with Mutation, here we will create a Post, Update and Delete the Post
+type Mutation {
+  createPost(data: PostInput!): Post!
+  updatePost(id: ID!, data: PostInput!): Post!
+  deletePost(id: ID!): Boolean
+}

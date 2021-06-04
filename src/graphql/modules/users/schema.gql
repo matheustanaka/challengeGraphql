@@ -1,0 +1,27 @@
+## Creating our Type User with the requirements
+type User {
+  _id: ID!
+  firstName: String!
+  lastName: String!
+  fullName: String!
+  email: String!
+  active: Boolean!
+}
+##Inputing our requirements of Type User
+input UserInput {
+  firstName: String!
+  lastName: String!
+  email: String!
+  active: Boolean!
+}
+## Getting our data
+type Query {
+  users: [User!]!
+  user(id: ID!): User!
+}
+## Manipulating data with Mutation, here we will create a User, Update and Delete the user
+type Mutation {
+  createUser(data: UserInput!): User!
+  updateUser(id: ID, data: UserInput!): User!
+  deleteUser(id: ID!): Boolean
+}
