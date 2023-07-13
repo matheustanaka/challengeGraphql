@@ -7,7 +7,7 @@
     "dev": "npx nodemon --exec babel-node src/index.js -e js,gql"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.6",
+    "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
     "@babel/node": "^7.22.6",
     "@babel/preset-env": "^7.22.9",
