@@ -10,7 +10,7 @@
     "@babel/cli": "^7.24.1",
     "@babel/core": "^7.24.1",
     "@babel/node": "^7.23.9",
-    "@babel/preset-env": "^7.24.1",
+    "@babel/preset-env": "^7.24.3",
     "nodemon": "^2.0.22"
   },
   "dependencies": {
